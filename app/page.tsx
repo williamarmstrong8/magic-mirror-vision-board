@@ -54,7 +54,7 @@ export default function Dashboard() {
             <WorkoutWidget />
           </div>
         </div>
-      </div>
-    </main>
+        </div>
+      </main>
   );
 }
