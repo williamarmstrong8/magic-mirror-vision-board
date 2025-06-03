@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.*
+
+# yarn (safe even if not using Yarn)
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -12,6 +14,8 @@
 
 # testing
 /coverage
+*.lcov
+.nyc_output
 
 # next.js
 /.next/
@@ -23,6 +27,8 @@
 # misc
 .DS_Store
 *.pem
+.cache
+.parcel-cache
 
 # debug
 npm-debug.log*
@@ -30,8 +36,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
@@ -39,3 +49,43 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+logs
+*.log
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Optional caches
+.npm
+.eslintcache
+.stylelintcache
+
+# Other package managers / tools (safe defaults)
+bower_components
+jspm_packages/
+web_modules/
+
+# VSCode test
+.vscode-test
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Public build systems (safe to include)
+.nuxt
+dist
+.cache/
+.vuepress/dist
+.temp
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port

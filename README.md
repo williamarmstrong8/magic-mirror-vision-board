@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# magic-mirror-vision-board
 
-## Getting Started
+Magic Mirror Vision Board is a custom Next.js app for physical Magic Mirror displays. It shows time, date, calendar, to-do list, weather, quote of the day, workout, and a rotating vision board. Powered by Google APIs and hosted on Vercel, it runs fullscreen on a Raspberry Pi.
 
-First, run the development server:
+## Features
+
+- Live time and date
+- Google Calendar integration
+- Google Tasks integration
+- Real-time weather (via public API)
+- Quote of the day from Google Sheets
+- Workout of the day from Google Sheets
+- Rotating vision board images
+- Optimized for Magic Mirror displays with two-way mirror glass
+- Runs fullscreen on Raspberry Pi in kiosk mode
+- Hosted on Vercel for easy updates
+
+## Tech Stack
+
+- Next.js (React)
+- TypeScript
+- NextAuth.js (Google OAuth)
+- Google APIs (Calendar, Tasks, Sheets)
+- Public Weather API
+- Vercel (Hosting)
+- Raspberry Pi (Display device)
+
+## Deploy
+
+The app is hosted on [Vercel](https://vercel.com/). Push updates to GitHub → auto-deploy to live Magic Mirror.
+
+## Usage
+
+Run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
